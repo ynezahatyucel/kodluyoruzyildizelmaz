@@ -9,26 +9,23 @@ public class yildizelmas {
         System.out.println("Bir Sayı Giriniz :");
         number = inp.nextInt();
 
-        for (int i = 0; i <= number ; i++) {
-            for (int j = 0; j < (number - i); j++) {
+        for (int i=1;i<=number;i++){
+            for (int j=1;j<=number-i;j++){
                 System.out.print(" ");
             }
-            for (int j = 1; j <= (2 * i - 1); j++) {
+            for (int k=1;k<=(i*2)-1;k++){
                 System.out.print("*");
             }
             System.out.println(" ");
+
         }
-
-        tempnumber = number;
-
-        for(int i = 1;i < number; i++){
-            for (int j = 1; j <= i; j++) {
+        for (int i=1;i<=number-1;i++){
+            for (int m=1;m<=i;m++){
                 System.out.print(" ");
             }
-            for (int z = 1; z <= (2 * tempnumber - 3); z++) {
+            for (int l=1;l<=2*(number-i)-1;l++){
                 System.out.print("*");
             }
-            tempnumber--;
             System.out.println(" ");
         }
     }
